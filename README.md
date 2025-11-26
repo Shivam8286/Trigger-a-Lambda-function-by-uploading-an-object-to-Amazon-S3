@@ -65,11 +65,8 @@ When finished, your AWS account will contain:
 - Associated IAM permissions, VPC settings, and CloudWatch logs
 
 ---
-<img width="1798" height="706" alt="Image" src="https://github.com/user-attachments/assets/d8341599-2f13-4423-8ff3-e256ceea37cf" />
 <img width="1115" height="750" alt="Image" src="https://github.com/user-attachments/assets/823005bd-d816-40eb-b12b-2c57e4f51888" />
 <img width="581" height="595" alt="Image" src="https://github.com/user-attachments/assets/3a5271c5-cf28-4470-b09f-c6d16652e7e9" />
-<img width="1888" height="751" alt="Image" src="https://github.com/user-attachments/assets/5a817370-934c-46a9-bd3f-353412b04d7b" />
-<img width="1889" height="765" alt="Image" src="https://github.com/user-attachments/assets/2a665801-1c1f-47f6-96de-6b8d3cede21b" />
 
 ## Task 1: Create the Amazon S3 Buckets
 
@@ -117,6 +114,8 @@ You’ll create a Lambda function that resizes images from S3.
 2. Select **Use an existing role**.
 3. Choose the role named `lambda-execution-role`.  
    💡 This gives Lambda read/write access to S3.
+<img width="1888" height="751" alt="Image" src="https://github.com/user-attachments/assets/5a817370-934c-46a9-bd3f-353412b04d7b" />
+
 
 ### Attach Networking (VPC, Subnet, Security Group)
 
@@ -149,6 +148,7 @@ You’ll create a Lambda function that resizes images from S3.
 2. Select **Upload from** → **Amazon S3 location**.
 3. Paste the provided Amazon S3 link URL (for `CreateThumbnail.zip`).
 4. Click **Save**.
+<img width="1889" height="765" alt="Image" src="https://github.com/user-attachments/assets/2a665801-1c1f-47f6-96de-6b8d3cede21b" />
 
 **Code included in the ZIP (for reference):**
 
@@ -250,6 +250,8 @@ AWS Lambda provides monitoring tools via CloudWatch.
 1. In AWS Console, go to **Lambda**.
 2. Open your `Create-Thumbnail` function.
 3. Click the **Monitor** tab.
+<img width="1798" height="706" alt="Image" src="https://github.com/user-attachments/assets/d8341599-2f13-4423-8ff3-e256ceea37cf" />
+
 
 ### Metrics to Observe
 
